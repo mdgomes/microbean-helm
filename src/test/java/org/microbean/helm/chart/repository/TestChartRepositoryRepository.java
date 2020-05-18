@@ -16,29 +16,19 @@
  */
 package org.microbean.helm.chart.repository;
 
+import hapi.chart.ChartOuterClass.Chart;
+import hapi.chart.MetadataOuterClass.MetadataOrBuilder;
+import org.junit.Test;
+import org.microbean.helm.chart.resolver.ChartResolverException;
+
 import java.io.BufferedInputStream;
-import java.io.InputStream;
 import java.io.IOException;
-
-import java.net.URI;
+import java.io.InputStream;
 import java.net.URISyntaxException;
-
-import java.nio.charset.StandardCharsets;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
-import java.util.Map;
 import java.util.Set;
-import java.util.SortedSet;
-
-import hapi.chart.ChartOuterClass.Chart;
-import hapi.chart.MetadataOuterClass.MetadataOrBuilder;
-
-import org.junit.Test;
-
-import org.microbean.helm.chart.resolver.ChartResolverException;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
