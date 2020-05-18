@@ -54,39 +54,32 @@
         <version>0.9.0</version>
         <type>jar</type>
       </dependency>
-      
-      <dependency>
-        <groupId>com.google.protobuf</groupId>
-        <artifactId>protobuf-java</artifactId>
-        <version>3.8.0</version>
-        <type>jar</type>
-      </dependency>
 
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-netty</artifactId>
-        <version>1.21.0</version>
+        <version>1.23.0</version>
         <type>jar</type>
       </dependency>
       
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-protobuf</artifactId>
-        <version>1.21.0</version>
+        <version>1.23.0</version>
         <type>jar</type>
       </dependency>
 
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-services</artifactId>
-        <version>1.21.0</version>
+        <version>1.23.0</version>
         <type>jar</type>
       </dependency>
       
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-stub</artifactId>
-        <version>1.21.0</version>
+        <version>1.23.0</version>
         <type>jar</type>
       </dependency>
 
@@ -144,13 +137,6 @@
     <dependency>
       <groupId>com.github.zafarkhaja</groupId>
       <artifactId>java-semver</artifactId>
-      <type>jar</type>
-      <scope>compile</scope>
-    </dependency>
-    
-    <dependency>
-      <groupId>com.google.protobuf</groupId>
-      <artifactId>protobuf-java</artifactId>
       <type>jar</type>
       <scope>compile</scope>
     </dependency>
@@ -382,7 +368,7 @@
             </goals>
             <configuration>
               <checkStaleness>true</checkStaleness>
-              <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.21.0:exe:${os.detected.classifier}</pluginArtifact>
+              <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.23.0:exe:${os.detected.classifier}</pluginArtifact>
               <pluginId>grpc-java</pluginId>
               <protoSourceRoot>${project.build.directory}/generated-sources/helm/_proto</protoSourceRoot>
               <protocArtifact>com.google.protobuf:protoc:3.8.0:exe:${os.detected.classifier}</protocArtifact>
