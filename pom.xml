@@ -4,7 +4,7 @@
 
   <groupId>org.microbean</groupId>
   <artifactId>microbean-helm</artifactId>
-  <version>2.12.3.0.0.1-SNAPSHOT</version>
+  <version>2.12.4-SNAPSHOT</version>
 
   <parent>
     <groupId>org.microbean</groupId>
@@ -424,6 +424,29 @@
       </plugin>
     </plugins>
   </reporting>
+
+  <repositories>
+    <repository>
+      <id>cloudsoft-releases</id>
+      <url>https://artifactory.cloudsoftcorp.com/artifactory/libs-release-local/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>cloudsoft-snapshots</id>
+      <url>https://artifactory.cloudsoftcorp.com/artifactory/libs-snapshot-local/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 
   <profiles>
     <profile>
