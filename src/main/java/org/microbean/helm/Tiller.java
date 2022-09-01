@@ -520,7 +520,7 @@ public class Tiller implements ConfigAware<Config>, Closeable {
       .idleTimeout(5L, TimeUnit.SECONDS)
       .keepAliveTime(30L, TimeUnit.SECONDS)
       .maxInboundMessageSize(MAX_MESSAGE_SIZE)
-      .usePlaintext(true)
+      .usePlaintext()
       .build();
   }
 
